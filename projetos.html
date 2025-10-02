@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meus Projetos - Portfólio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 50px;
+            color: white;
+        }
+
+        .header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+
+        .project-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+        }
+
+        .project-image {
+            width: 100%;
+            height: 200px;
+            background: linear-gradient(45deg, #f0f0f0, #e0e0e0);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #666;
+            font-size: 1.1rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .project-image::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect width="100" height="100" fill="%23f8f9fa"/><text x="50" y="50" text-anchor="middle" dy=".3em" font-family="Arial" font-size="12" fill="%23666">Imagem do Projeto</text></svg>') center/cover;
+        }
+
+        .project-content {
+            padding: 25px;
+        }
+
+        .project-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 15px;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+        }
+
+        .project-description {
+            color: #555;
+            margin-bottom: 20px;
+            line-height: 1.7;
+        }
+
+        .tech-stack {
+            margin-bottom: 20px;
+        }
+
+        .tech-stack h4 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+            font-size: 1rem;
+        }
+
+        .tech-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .tech-tag {
+            background: linear-gradient(45deg, #3498db, #2980b9);
+            color: white;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+
+        .project-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .project-link {
+            background: linear-gradient(45deg, #e74c3c, #c0392b);
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 25px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .project-link:hover {
+            background: linear-gradient(45deg, #c0392b, #a93226);
+            transform: translateY(-2px);
+        }
+
+        .impact-metrics {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 15px;
+            border-left: 4px solid #27ae60;
+        }
+
+        .impact-metrics h4 {
+            color: #27ae60;
+            margin-bottom: 8px;
+        }
+
+        .impact-metrics p {
+            color: #555;
+            font-size: 0.9rem;
+        }
+
+        .highlight {
+            background: linear-gradient(45deg, #f39c12, #e67e22);
+            color: white;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .projects-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            
+            .project-links {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🚀 Meus Projetos</h1>
+            <p>Desenvolvimentos que demonstram minha paixão por tecnologia e inovação</p>
+        </div>
+
+        <div class="projects-grid">
+            <!-- BZS SISTEMAS -->
+            <div class="project-card">
+                <div class="project-image">
+                    <!-- Substitua por: <img src="URL_DA_IMAGEM_BZS" alt="BZS Sistemas"> -->
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">🏢 BZS Sistemas</h3>
+                    <p class="project-description">
+                        Sistema completo de gestão empresarial desenvolvido com foco em <span class="highlight">automação de processos</span>. 
+                        Implementei formulários inteligentes para cadastro de clientes, empresas, funcionários, fornecedores e produtos, 
+                        com funcionalidades avançadas de listagem, edição e exclusão. O sistema gera <span class="highlight">relatórios dinâmicos</span> 
+                        sobre movimentos empresariais, proporcionando insights valiosos para tomada de decisões.
+                    </p>
+                    
+                    <div class="tech-stack">
+                        <h4>🛠️ Tecnologias Utilizadas:</h4>
+                        <div class="tech-tags">
+                            <span class="tech-tag">PostgreSQL</span>
+                            <span class="tech-tag">PHP 7</span>
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">Bootstrap</span>
+                            <span class="tech-tag">YII2 Framework</span>
+                            <span class="tech-tag">MVC Architecture</span>
+                        </div>
+                    </div>
+
+                    <div class="impact-metrics">
+                        <h4>📊 Impacto:</h4>
+                        <p>• Automação completa de processos administrativos<br>
+                        • Relatórios dinâmicos para análise de dados<br>
+                        • Interface responsiva e intuitiva</p>
+                    </div>
+
+                    <div class="project-links">
+                        <a href="#" class="project-link">🔗 LinkedIn</a>
+                        <a href="#" class="project-link">📱 Demo</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ENVIO RÁPIDO -->
+            <div class="project-card">
+                <div class="project-image">
+                    <!-- Substitua por: <img src="URL_DA_IMAGEM_ENVIO_RAPIDO" alt="Envio Rápido"> -->
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">📧 Envio Rápido (EmailsAutom)</h3>
+                    <p class="project-description">
+                        Solução inovadora desenvolvida em <span class="highlight">dezembro de 2023</span> para simplificar o envio de e-mails personalizados 
+                        sem dependência de banco de dados. A aplicação oferece <span class="highlight">templates HTML personalizáveis</span> e 
+                        armazenamento eficiente via cookies, garantindo uma experiência ágil e responsiva. 
+                        A integração fluida entre front-end e back-end resulta em uma solução flexível e eficiente.
+                    </p>
+                    
+                    <div class="tech-stack">
+                        <h4>🛠️ Tecnologias Utilizadas:</h4>
+                        <div class="tech-tags">
+                            <span class="tech-tag">PHP</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">Cookies</span>
+                            <span class="tech-tag">Sessions</span>
+                        </div>
+                    </div>
+
+                    <div class="impact-metrics">
+                        <h4>📊 Impacto:</h4>
+                        <p>• Envio de e-mails sem dependência de banco de dados<br>
+                        • Templates personalizáveis em HTML<br>
+                        • Interface responsiva e intuitiva</p>
+                    </div>
+
+                    <div class="project-links">
+                        <a href="#" class="project-link">🔗 LinkedIn</a>
+                        <a href="#" class="project-link">📱 Demo</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- BOT DISCORD -->
+            <div class="project-card">
+                <div class="project-image">
+                    <!-- Substitua por: <img src="URL_DA_IMAGEM_BOT_DISCORD" alt="Bot Discord"> -->
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">🤖 Bot Discord Multifuncional</h3>
+                    <p class="project-description">
+                        Bot completo desenvolvido em <span class="highlight">Python</span> com integração ao banco de dados <span class="highlight">Azure</span>. 
+                        Oferece uma experiência gamificada com jogos como xadrez e truco, comandos de utilidade incluindo envio de e-mails direto pelo Discord, 
+                        sistema de ranks e moedas internas (coins). Uma solução que combina entretenimento e funcionalidade prática.
+                    </p>
+                    
+                    <div class="tech-stack">
+                        <h4>🛠️ Tecnologias Utilizadas:</h4>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Discord.py</span>
+                            <span class="tech-tag">Azure Database</span>
+                            <span class="tech-tag">SQL</span>
+                            <span class="tech-tag">API Integration</span>
+                        </div>
+                    </div>
+
+                    <div class="impact-metrics">
+                        <h4>📊 Impacto:</h4>
+                        <p>• Sistema gamificado com ranks e moedas<br>
+                        • Integração com jogos (xadrez, truco)<br>
+                        • Comandos de utilidade (e-mail)</p>
+                    </div>
+
+                    <div class="project-links">
+                        <a href="#" class="project-link">🔗 LinkedIn</a>
+                        <a href="#" class="project-link">📱 Demo</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- APLICATIVO MANGÁS -->
+            <div class="project-card">
+                <div class="project-image">
+                    <!-- Substitua por: <img src="URL_DA_IMAGEM_MANGAS" alt="App Mangás"> -->
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">📚 App Mobile de Mangás Asiáticos</h3>
+                    <p class="project-description">
+                        Aplicativo móvel em desenvolvimento para leitura de mangás asiáticos, conectando usuários a uma ampla variedade de títulos 
+                        através de <span class="highlight">API online</span>. Interface intuitiva com telas de recomendações, lançamentos, 
+                        detalhes de livros e leitura otimizada. Inclui sistema de cadastro, pesquisa avançada e perfil personalizado.
+                    </p>
+                    
+                    <div class="tech-stack">
+                        <h4>🛠️ Tecnologias Utilizadas:</h4>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Flutter</span>
+                            <span class="tech-tag">Dart</span>
+                            <span class="tech-tag">REST API</span>
+                            <span class="tech-tag">Mobile UI/UX</span>
+                            <span class="tech-tag">State Management</span>
+                        </div>
+                    </div>
+
+                    <div class="impact-metrics">
+                        <h4>📊 Impacto:</h4>
+                        <p>• Interface otimizada para leitura<br>
+                        • Sistema de recomendações inteligente<br>
+                        • Experiência de usuário fluida</p>
+                    </div>
+
+                    <div class="project-links">
+                        <a href="#" class="project-link">🔗 LinkedIn</a>
+                        <a href="#" class="project-link">📱 Demo</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ERP FRUTNORTE -->
+            <div class="project-card">
+                <div class="project-image">
+                    <!-- Substitua por: <img src="URL_DA_IMAGEM_ERP" alt="ERP FrutNorte"> -->
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">🏭 Sistema ERP FrutNorte</h3>
+                    <p class="project-description">
+                        Sistema ERP desktop desenvolvido com <span class="highlight">Flutter</span> (versão mais recente), MySQL 15 e GetX. 
+                        Inclui CRUD completo para cadastros de pessoas e produtos, controle de entrada/saída e sistema de acesso. 
+                        <span class="highlight">Desafio superado:</span> implementação no Windows Server 2012 com bibliotecas avançadas 
+                        como flutter_hooks e bitsdojo_window. Foco em otimização de desempenho e gestão eficiente de estado.
+                    </p>
+                    
+                    <div class="tech-stack">
+                        <h4>🛠️ Tecnologias Utilizadas:</h4>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Flutter</span>
+                            <span class="tech-tag">MySQL 15</span>
+                            <span class="tech-tag">GetX</span>
+                            <span class="tech-tag">flutter_hooks</span>
+                            <span class="tech-tag">bitsdojo_window</span>
+                            <span class="tech-tag">Windows Server</span>
+                        </div>
+                    </div>
+
+                    <div class="impact-metrics">
+                        <h4>📊 Impacto:</h4>
+                        <p>• Sistema ERP completo para desktop<br>
+                        • Otimização de desempenho com cache<br>
+                        • Compatibilidade com Windows Server 2012</p>
+                    </div>
+
+                    <div class="project-links">
+                        <a href="#" class="project-link">🔗 LinkedIn</a>
+                        <a href="#" class="project-link">📱 Demo</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SSC - SISTEMA SUPORTE -->
+            <div class="project-card">
+                <div class="project-image">
+                    <!-- Substitua por: <img src="URL_DA_IMAGEM_SSC" alt="SSC Sistema"> -->
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">🎧 SSC - Sistema de Suporte ao Cliente</h3>
+                    <p class="project-description">
+                        Sistema robusto de suporte técnico desenvolvido em <span class="highlight">C#</span> com Windows Forms e .NET Core. 
+                        Oferece <span class="highlight">chat em tempo real</span> para comunicação instantânea entre técnicos e clientes, 
+                        além de CRUD completo para gerenciamento de chamados. Solução essencial para resolução rápida de problemas técnicos.
+                    </p>
+                    
+                    <div class="tech-stack">
+                        <h4>🛠️ Tecnologias Utilizadas:</h4>
+                        <div class="tech-tags">
+                            <span class="tech-tag">C#</span>
+                            <span class="tech-tag">Windows Forms</span>
+                            <span class="tech-tag">.NET Core</span>
+                            <span class="tech-tag">Real-time Chat</span>
+                            <span class="tech-tag">SQL Server</span>
+                        </div>
+                    </div>
+
+                    <div class="impact-metrics">
+                        <h4>📊 Impacto:</h4>
+                        <p>• Chat em tempo real para suporte<br>
+                        • Gestão eficiente de chamados<br>
+                        • Interface desktop intuitiva</p>
+                    </div>
+
+                    <div class="project-links">
+                        <a href="#" class="project-link">🔗 LinkedIn</a>
+                        <a href="#" class="project-link">📱 Demo</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- NEXUS MANAGE -->
+            <div class="project-card">
+                <div class="project-image">
+                    <!-- Substitua por: <img src="URL_DA_IMAGEM_NEXUS" alt="Nexus Manage"> -->
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">🛒 Nexus Manage - Gestão Mercado Livre</h3>
+                    <p class="project-description">
+                        Plataforma robusta desenvolvida com <span class="highlight">MySQL, Peewee e FastAPI</span> para facilitar a vida dos vendedores no Mercado Livre. 
+                        Como <span class="highlight">chefe do desenvolvimento back-end</span>, implementei arquitetura eficiente para automação de vendas, 
+                        gerenciamento de estoque e geração de relatórios detalhados. Solução que otimiza tempo e aumenta eficiência nas vendas.
+                    </p>
+                    
+                    <div class="tech-stack">
+                        <h4>🛠️ Tecnologias Utilizadas:</h4>
+                        <div class="tech-tags">
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">Peewee ORM</span>
+                            <span class="tech-tag">FastAPI</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Mercado Livre API</span>
+                            <span class="tech-tag">Backend Architecture</span>
+                        </div>
+                    </div>
+
+                    <div class="impact-metrics">
+                        <h4>📊 Impacto:</h4>
+                        <p>• Automação completa de vendas<br>
+                        • Gerenciamento inteligente de estoque<br>
+                        • Relatórios detalhados de performance</p>
+                    </div>
+
+                    <div class="project-links">
+                        <a href="#" class="project-link">🔗 LinkedIn</a>
+                        <a href="#" class="project-link">📱 Demo</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CSBAR -->
+            <div class="project-card">
+                <div class="project-image">
+                    <!-- Substitua por: <img src="URL_DA_IMAGEM_CSBAR" alt="CsBar App"> -->
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">🍻 CsBar - App para Maquininhas Stone</h3>
+                    <p class="project-description">
+                        Solução integrada para controle de mesas, tickets e pagamentos em restaurantes e bares utilizando 
+                        <span class="highlight">maquininhas Stone</span>. Desenvolvido com Flutter, inclui integração nativa com Stone, 
+                        testes unitários e arquitetura escalável. Funciona em dispositivos móveis e maquininhas, 
+                        resultando em <span class="highlight">aumento significativo na satisfação dos clientes</span>.
+                    </p>
+                    
+                    <div class="tech-stack">
+                        <h4>🛠️ Tecnologias Utilizadas:</h4>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Flutter</span>
+                            <span class="tech-tag">Stone SDK</span>
+                            <span class="tech-tag">Unit Tests</span>
+                            <span class="tech-tag">Mobile Development</span>
+                            <span class="tech-tag">Payment Integration</span>
+                        </div>
+                    </div>
+
+                    <div class="impact-metrics">
+                        <h4>📊 Impacto:</h4>
+                        <p>• Aumento significativo na satisfação dos clientes<br>
+                        • Integração nativa com Stone<br>
+                        • Projeto ativo com otimizações contínuas</p>
+                    </div>
+
+                    <div class="project-links">
+                        <a href="#" class="project-link">🔗 LinkedIn</a>
+                        <a href="#" class="project-link">📱 Demo</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CSSALAO -->
+            <div class="project-card">
+                <div class="project-image">
+                    <!-- Substitua por: <img src="URL_DA_IMAGEM_CSSALAO" alt="CsSalao App"> -->
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">💄 CsSalao - App para Salões de Beleza</h3>
+                    <p class="project-description">
+                        Solução completa para controle de salões de beleza, incluindo gestão de pessoas, atendimentos, contas e pagamentos 
+                        via <span class="highlight">maquininhas Stone</span>. Desenvolvido com Flutter (front-end) e Go com Echo/GORM (back-end), 
+                        inclui testes unitários e arquitetura escalável. Funciona em dispositivos móveis e maquininhas, 
+                        proporcionando <span class="highlight">aumento significativo na satisfação dos clientes</span>.
+                    </p>
+                    
+                    <div class="tech-stack">
+                        <h4>🛠️ Tecnologias Utilizadas:</h4>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Flutter</span>
+                            <span class="tech-tag">Go (Golang)</span>
+                            <span class="tech-tag">Echo Framework</span>
+                            <span class="tech-tag">GORM</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">Stone SDK</span>
+                            <span class="tech-tag">Unit Tests</span>
+                        </div>
+                    </div>
+
+                    <div class="impact-metrics">
+                        <h4>📊 Impacto:</h4>
+                        <p>• Gestão completa de salões de beleza<br>
+                        • Arquitetura full-stack escalável<br>
+                        • Projeto ativo com otimizações contínuas</p>
+                    </div>
+
+                    <div class="project-links">
+                        <a href="#" class="project-link">🔗 LinkedIn</a>
+                        <a href="#" class="project-link">📱 Demo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
