@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Daniel Feliciano | Desenvolvedor Fullstack/Mobile</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -394,34 +397,41 @@
             <h2 class="section-title" data-aos="fade-up">Projetos Relevantes</h2>
             
             <div class="projects-container">
+                <!-- Csbar -->
                 <div class="project-item" data-aos="flip-up" data-aos-delay="100">
+                    <div class="project-image" style="--project-image: url('');"></div>
                     <div class="project-content">
-                        <h3>Projeto Csbar - Aplicativo mobile para Maquininhas de cartão</h3>
-                        <p>O projeto Csbar visou integrar o controle de mesas, tickets e pagamentos de restaurantes e bares em uma única solução, utilizando maquininhas de cartão (Stone). Fui responsável pelo desenvolvimento do front-end com Flutter, integração nativa com a Stone e implementação de testes unitários.</p>
+                        <h3>Projeto Csbar - App para Maquininhas de Cartão</h3>
+                        <p>Integra o controle de mesas, tickets e pagamentos para bares e restaurantes em maquininhas Stone e smartphones. Atuei no front-end em Flutter, integrações nativas e testes unitários. Projeto ativo com foco em escalabilidade e otimizações.</p>
                         <div class="project-tags">
                             <span>Flutter</span>
-                            <span>Mobile</span>
-                            <span>Integração</span>
+                            <span>Stone</span>
+                            <span>POS</span>
+                            <span>Testes</span>
                         </div>
                     </div>
                 </div>
-                
-                <div class="project-item" data-aos="flip-up" data-aos-delay="200">
+
+                <!-- Nexus Manage -->
+                <div class="project-item" data-aos="flip-up" data-aos-delay="150">
+                    <div class="project-image" style="--project-image: url('');"></div>
                     <div class="project-content">
-                        <h3>Nexus Manage - Sistema de Gestão para Vendedores do Mercado Livre</h3>
-                        <p>Desenvolvido com MySQL, Peewee e FastAPI, o Nexus Manage é uma plataforma robusta voltada para facilitar a vida dos vendedores no Mercado Livre. Como chefe do desenvolvimento do back-end, implementei uma arquitetura eficiente para gerenciar todas as operações do sistema.</p>
+                        <h3>Nexus Manage - Gestão para Vendedores do Mercado Livre</h3>
+                        <p>Plataforma para automação de vendas, estoque e relatórios. Liderei o back-end com FastAPI + Peewee + MySQL, desenhando uma arquitetura performática e integrada ao front-end.</p>
                         <div class="project-tags">
-                            <span>MySQL</span>
-                            <span>Peewee</span>
                             <span>FastAPI</span>
+                            <span>Peewee</span>
+                            <span>MySQL</span>
                         </div>
                     </div>
                 </div>
-                
-                <div class="project-item" data-aos="flip-up" data-aos-delay="300">
+
+                <!-- SSC -->
+                <div class="project-item" data-aos="flip-up" data-aos-delay="200">
+                    <div class="project-image" style="--project-image: url('');"></div>
                     <div class="project-content">
                         <h3>SSC - Sistema de Suporte ao Cliente</h3>
-                        <p>Desenvolvido em C# utilizando Windows Forms e .NET Core, o SSC é um sistema robusto de suporte técnico que visa melhorar a comunicação entre técnicos e clientes. Com funcionalidades avançadas de chat em tempo real, permite uma interação instantânea e eficaz.</p>
+                        <p>Sistema de suporte técnico com chat em tempo real e CRUD completo de chamados. Construído em C# com Windows Forms e .NET Core, focado em agilidade na resolução de problemas.</p>
                         <div class="project-tags">
                             <span>C#</span>
                             <span>Windows Forms</span>
@@ -429,24 +439,28 @@
                         </div>
                     </div>
                 </div>
-                
-                <div class="project-item" data-aos="flip-up" data-aos-delay="400">
+
+                <!-- ERP FrutNorte -->
+                <div class="project-item" data-aos="flip-up" data-aos-delay="250">
+                    <div class="project-image" style="--project-image: url('');"></div>
                     <div class="project-content">
                         <h3>Sistema ERP FrutNorte</h3>
-                        <p>Desenvolvi um sistema ERP desktop utilizando Flutter (versão mais recente), MySQL 15 e GetX para controle de estado. O sistema inclui funcionalidades como CRUD de cadastros de pessoas e produtos, controle de entrada e saída de produtos, e controle de acesso.</p>
+                        <p>ERP desktop em Flutter com MySQL 15 e GetX: cadastros, controle de estoque e acesso. Deploy no Windows Server 2012, com flutter_hooks e bitsdojo_window para recursos de desktop.</p>
                         <div class="project-tags">
                             <span>Flutter</span>
+                            <span>Desktop</span>
                             <span>MySQL</span>
                             <span>GetX</span>
-                            <span>Desktop</span>
                         </div>
                     </div>
                 </div>
-                
-                <div class="project-item" data-aos="flip-up" data-aos-delay="500">
+
+                <!-- App de Mangás -->
+                <div class="project-item" data-aos="flip-up" data-aos-delay="300">
+                    <div class="project-image" style="--project-image: url('');"></div>
                     <div class="project-content">
-                        <h3>Aplicativo Android/IOS de livros</h3>
-                        <p>Estou desenvolvendo um aplicativo móvel para a leitura de mangás asiáticos, conectando os usuários a uma ampla variedade de títulos através de uma API online. O aplicativo possui três telas principais: a tela inicial com abas de recomendações, lançamentos e mangás em andamento.</p>
+                        <h3>Aplicativo Android/iOS para Leitura de Mangás</h3>
+                        <p>App móvel conectado a API online com abas de recomendações, lançamentos e andamento, detalhes do mangá e leitor otimizado. Inclui cadastro, busca e perfil do usuário.</p>
                         <div class="project-tags">
                             <span>Flutter</span>
                             <span>Mobile</span>
@@ -454,11 +468,13 @@
                         </div>
                     </div>
                 </div>
-                
-                <div class="project-item" data-aos="flip-up" data-aos-delay="600">
+
+                <!-- Bot do Discord -->
+                <div class="project-item" data-aos="flip-up" data-aos-delay="350">
+                    <div class="project-image" style="--project-image: url('');"></div>
                     <div class="project-content">
-                        <h3>Bot do discord</h3>
-                        <p>Desenvolvi um bot do discord totalmente em python com conexão em um banco de dados AZURE, esse bot tem várias integrações como Jogos divertidos tipo xadrez, truco comandos de utilidades como um comando chamado Email que te dá capacidade de enviar emails sem acessar uma plataforma de emails.</p>
+                        <h3>Bot do Discord</h3>
+                        <p>Bot em Python integrado a banco Azure, com minigames (xadrez, truco), utilitários (envio de e‑mails) e sistema de ranks e moedas internas.</p>
                         <div class="project-tags">
                             <span>Python</span>
                             <span>Azure</span>
@@ -467,7 +483,51 @@
                     </div>
                 </div>
 
+                <!-- BZS SISTEMAS -->
+                <div class="project-item" data-aos="flip-up" data-aos-delay="400">
+                    <div class="project-image" style="--project-image: url('');"></div>
+                    <div class="project-content">
+                        <h3>BZS Sistemas</h3>
+                        <p>Criação de cadastros (clientes, empresas, funcionários, fornecedores, produtos), listas para editar/excluir/visualizar e relatórios dinâmicos. Arquitetura MVC com Yii2.</p>
+                        <div class="project-tags">
+                            <span>PostgreSQL</span>
+                            <span>PHP 7</span>
+                            <span>Yii2</span>
+                            <span>Bootstrap</span>
+                        </div>
+                    </div>
+                </div>
 
+                <!-- Envio Rápido (EmailsAutom) -->
+                <div class="project-item" data-aos="flip-up" data-aos-delay="450">
+                    <div class="project-image" style="--project-image: url('');"></div>
+                    <div class="project-content">
+                        <h3>Envio Rápido (EmailsAutom)</h3>
+                        <p>Aplicação web para envio de e‑mails personalizados sem banco de dados. Templates HTML customizáveis, armazenamento via cookies e controle de sessões, com integração fluida front‑end/back‑end.</p>
+                        <div class="project-tags">
+                            <span>PHP</span>
+                            <span>JavaScript</span>
+                            <span>HTML</span>
+                            <span>CSS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CsSalao -->
+                <div class="project-item" data-aos="flip-up" data-aos-delay="500">
+                    <div class="project-image" style="--project-image: url('');"></div>
+                    <div class="project-content">
+                        <h3>Projeto CsSalao - Gestão para Salões de Beleza</h3>
+                        <p>Gestão completa de pessoas, atendimentos, contas e pagamentos com maquininhas Stone e app Android. Front-end em Flutter, back-end em Go (Echo + GORM, MySQL) e testes unitários. Arquitetura escalável.</p>
+                        <div class="project-tags">
+                            <span>Flutter</span>
+                            <span>Go</span>
+                            <span>Echo</span>
+                            <span>GORM</span>
+                            <span>MySQL</span>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             
@@ -653,6 +713,7 @@
             window.addEventListener('scroll', function() {
                 const sections = document.querySelectorAll('section');
                 const navLinks = document.querySelectorAll('.nav-links a');
+                const nav = document.querySelector('nav');
                 
                 let current = '';
                 
@@ -671,6 +732,13 @@
                         link.classList.add('active');
                     }
                 });
+
+                // Toggle nav scrolled style
+                if (window.scrollY > 10) {
+                    nav.classList.add('nav-scrolled');
+                } else {
+                    nav.classList.remove('nav-scrolled');
+                }
             });
             
             // Animate skill bars
