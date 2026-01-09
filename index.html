@@ -331,7 +331,7 @@
                     <div class="experience-header">
                         <h3>Analista e desenvolvedor de sistemas</h3>
                         <span class="experience-company">Calory Sistema</span>
-                        <span class="experience-date">03/2024 - Atual</span>
+                        <span class="experience-date">03/2024 - 09/2025</span>
                     </div>
                     <div class="experience-description">
                         <p>Na Calory Sistema, sou responsável pelo desenvolvimento de softwares em Flutter. Minha principal função é criar aplicativos do zero, liderando o processo desde o planejamento da estrutura até a implementação da interface de usuário e integração com a base de dados.</p>
@@ -375,16 +375,7 @@
                     </div>
                 </div>
                 
-                <div class="experience-item" data-aos="fade-up" data-aos-delay="500">
-                    <div class="experience-header">
-                        <h3>Embalador a mão</h3>
-                        <span class="experience-company">Allmayer Supermercado</span>
-                        <span class="experience-date">04/2022 - 10/2022</span>
-                    </div>
-                    <div class="experience-description">
-                        <p>Era embalador a mao ajudando principalmente o cliente final nas compras de ate empacotar as compras dele ate levar no meio de locomoção por lidar com o cliente final sempre estava em supervisão de chefes ou gerentes assim gerando uma habilidade emoção boa por conta que lidava com cliente final é um comportamento serio.</p>
-                    </div>
-                </div>
+                
             </div>
         </div>
     </section>
@@ -705,6 +696,15 @@
                         
                         const tagsHTML = projeto.tags.map(tag => `<span>${tag}</span>`).join('');
                         
+                        let imagemHTML = '';
+                        if (projeto.imagem) {
+                            imagemHTML = `
+                                <div class="project-image">
+                                    <img src="${projeto.imagem}" alt="${projeto.titulo}">
+                                </div>
+                            `;
+                        }
+                        
                         let linksHTML = '';
                         if (projeto.link || projeto.github) {
                             linksHTML = '<div class="project-links">';
@@ -718,6 +718,7 @@
                         }
                         
                         projectItem.innerHTML = `
+                            ${imagemHTML}
                             <div class="project-content">
                                 <h3>${projeto.titulo}</h3>
                                 <p>${projeto.descricao}</p>
