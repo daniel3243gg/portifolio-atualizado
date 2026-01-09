@@ -1,0 +1,68 @@
+{
+  "projetos": [
+    {
+      "id": 1,
+      "titulo": "Projeto Csbar - Aplicativo mobile para Maquininhas de cartão",
+      "descricao": "O projeto Csbar visou integrar o controle de mesas, tickets e pagamentos de restaurantes e bares em uma única solução, utilizando maquininhas de cartão (Stone). Fui responsável pelo desenvolvimento do front-end com Flutter, integração nativa com a Stone e implementação de testes unitários.",
+      "tags": ["Flutter", "Mobile", "Integração"],
+      "link": "",
+      "github": ""
+    },
+    {
+      "id": 2,
+      "titulo": "Nexus Manage - Sistema de Gestão para Vendedores do Mercado Livre",
+      "descricao": "Desenvolvido com MySQL, Peewee e FastAPI, o Nexus Manage é uma plataforma robusta voltada para facilitar a vida dos vendedores no Mercado Livre. Como chefe do desenvolvimento do back-end, implementei uma arquitetura eficiente para gerenciar todas as operações do sistema.",
+      "tags": ["MySQL", "Peewee", "FastAPI"],
+      "link": "",
+      "github": ""
+    },
+    {
+      "id": 3,
+      "titulo": "SSC - Sistema de Suporte ao Cliente",
+      "descricao": "Desenvolvido em C# utilizando Windows Forms e .NET Core, o SSC é um sistema robusto de suporte técnico que visa melhorar a comunicação entre técnicos e clientes. Com funcionalidades avançadas de chat em tempo real, permite uma interação instantânea e eficaz.",
+      "tags": ["C#", "Windows Forms", ".NET Core"],
+      "link": "",
+      "github": ""
+    },
+    {
+      "id": 4,
+      "titulo": "Sistema ERP FrutNorte",
+      "descricao": "Desenvolvi um sistema ERP desktop utilizando Flutter (versão mais recente), MySQL 15 e GetX para controle de estado. O sistema inclui funcionalidades como CRUD de cadastros de pessoas e produtos, controle de entrada e saída de produtos, e controle de acesso.",
+      "tags": ["Flutter", "MySQL", "GetX", "Desktop"],
+      "link": "",
+      "github": ""
+    },
+    {
+      "id": 5,
+      "titulo": "Aplicativo Android/IOS de livros",
+      "descricao": "Estou desenvolvendo um aplicativo móvel para a leitura de mangás asiáticos, conectando os usuários a uma ampla variedade de títulos através de uma API online. O aplicativo possui três telas principais: a tela inicial com abas de recomendações, lançamentos e mangás em andamento.",
+      "tags": ["Flutter", "Mobile", "API"],
+      "link": "",
+      "github": ""
+    },
+    {
+      "id": 6,
+      "titulo": "Bot do discord",
+      "descricao": "Desenvolvi um bot do discord totalmente em python com conexão em um banco de dados AZURE, esse bot tem várias integrações como Jogos divertidos tipo xadrez, truco comandos de utilidades como um comando chamado Email que te dá capacidade de enviar emails sem acessar uma plataforma de emails.",
+      "tags": ["Python", "Azure", "Discord API"],
+      "link": "",
+      "github": ""
+    },
+    {
+      "id": 7,
+      "titulo": "Sistema CRM para Clínicas Médicas",
+      "descricao": "Plataforma completa de CRM para clínicas médicas desenvolvida com Golang, Echo Framework v4 e GORM utilizando PostgreSQL. Responsável pelo desenvolvimento completo do back-end, implementando Clean Architecture com separação de responsabilidades (handlers, services, repositories). Sistema inclui autenticação dupla (JWT e API Key), sistema de permissões granular por roles hierárquicos, WebSocket para comunicação em tempo real, chat inteligente com IA utilizando LLMs para atendimento automatizado 24/7, gestão completa de pacientes, agendamentos, prontuários eletrônicos (anamneses), dashboard com métricas, sistema multi-clínicas, planos e assinaturas, e integração com sistemas de automação (n8n, Make, Zapier). Implementação de middlewares customizados, tratamento centralizado de erros, paginação, upload de arquivos, webhooks para agentes de IA, integração com MCPs e API REST completa. Responsável também pela infraestrutura, subindo e configurando o servidor em KVM4 da Hostinger, garantindo alta disponibilidade e performance do sistema.",
+      "tags": ["Golang", "ECHO", "GORM", "PostgreSQL", "Clean Architecture", "JWT", "WebSocket", "REST API", "LLM", "IA", "MCPs", "KVM4", "Infraestrutura"],
+      "link": "",
+      "github": ""
+    },
+    {
+      "id": 8,
+      "titulo": "Projeto CsSalao - Aplicativo Mobile para Salões de Beleza",
+      "descricao": "Solução completa de controle para salões de beleza integrando pessoas, atendimentos, contas e pagamentos. Desenvolvimento do front-end com Flutter e back-end em Golang utilizando ECHO e GORM com banco MySQL. Integração nativa com maquininhas de cartão Stone e implementação de testes unitários. Aplicativo funciona em dispositivos móveis e na maquininha. Principal desafio foi criar uma arquitetura escalável, superado através de estudos e boas práticas de desenvolvimento.",
+      "tags": ["Flutter", "Golang", "ECHO", "GORM", "MySQL", "Stone", "API"],
+      "link": "",
+      "github": ""
+    }
+  ]
+}

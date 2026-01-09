@@ -393,81 +393,8 @@
         <div class="container">
             <h2 class="section-title" data-aos="fade-up">Projetos Relevantes</h2>
             
-            <div class="projects-container">
-                <div class="project-item" data-aos="flip-up" data-aos-delay="100">
-                    <div class="project-content">
-                        <h3>Projeto Csbar - Aplicativo mobile para Maquininhas de cartão</h3>
-                        <p>O projeto Csbar visou integrar o controle de mesas, tickets e pagamentos de restaurantes e bares em uma única solução, utilizando maquininhas de cartão (Stone). Fui responsável pelo desenvolvimento do front-end com Flutter, integração nativa com a Stone e implementação de testes unitários.</p>
-                        <div class="project-tags">
-                            <span>Flutter</span>
-                            <span>Mobile</span>
-                            <span>Integração</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="project-item" data-aos="flip-up" data-aos-delay="200">
-                    <div class="project-content">
-                        <h3>Nexus Manage - Sistema de Gestão para Vendedores do Mercado Livre</h3>
-                        <p>Desenvolvido com MySQL, Peewee e FastAPI, o Nexus Manage é uma plataforma robusta voltada para facilitar a vida dos vendedores no Mercado Livre. Como chefe do desenvolvimento do back-end, implementei uma arquitetura eficiente para gerenciar todas as operações do sistema.</p>
-                        <div class="project-tags">
-                            <span>MySQL</span>
-                            <span>Peewee</span>
-                            <span>FastAPI</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="project-item" data-aos="flip-up" data-aos-delay="300">
-                    <div class="project-content">
-                        <h3>SSC - Sistema de Suporte ao Cliente</h3>
-                        <p>Desenvolvido em C# utilizando Windows Forms e .NET Core, o SSC é um sistema robusto de suporte técnico que visa melhorar a comunicação entre técnicos e clientes. Com funcionalidades avançadas de chat em tempo real, permite uma interação instantânea e eficaz.</p>
-                        <div class="project-tags">
-                            <span>C#</span>
-                            <span>Windows Forms</span>
-                            <span>.NET Core</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="project-item" data-aos="flip-up" data-aos-delay="400">
-                    <div class="project-content">
-                        <h3>Sistema ERP FrutNorte</h3>
-                        <p>Desenvolvi um sistema ERP desktop utilizando Flutter (versão mais recente), MySQL 15 e GetX para controle de estado. O sistema inclui funcionalidades como CRUD de cadastros de pessoas e produtos, controle de entrada e saída de produtos, e controle de acesso.</p>
-                        <div class="project-tags">
-                            <span>Flutter</span>
-                            <span>MySQL</span>
-                            <span>GetX</span>
-                            <span>Desktop</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="project-item" data-aos="flip-up" data-aos-delay="500">
-                    <div class="project-content">
-                        <h3>Aplicativo Android/IOS de livros</h3>
-                        <p>Estou desenvolvendo um aplicativo móvel para a leitura de mangás asiáticos, conectando os usuários a uma ampla variedade de títulos através de uma API online. O aplicativo possui três telas principais: a tela inicial com abas de recomendações, lançamentos e mangás em andamento.</p>
-                        <div class="project-tags">
-                            <span>Flutter</span>
-                            <span>Mobile</span>
-                            <span>API</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="project-item" data-aos="flip-up" data-aos-delay="600">
-                    <div class="project-content">
-                        <h3>Bot do discord</h3>
-                        <p>Desenvolvi um bot do discord totalmente em python com conexão em um banco de dados AZURE, esse bot tem várias integrações como Jogos divertidos tipo xadrez, truco comandos de utilidades como um comando chamado Email que te dá capacidade de enviar emails sem acessar uma plataforma de emails.</p>
-                        <div class="project-tags">
-                            <span>Python</span>
-                            <span>Azure</span>
-                            <span>Discord API</span>
-                        </div>
-                    </div>
-                </div>
-
-
+            <div class="projects-container" id="projects-container">
+                <!-- Projetos serão carregados dinamicamente via JavaScript -->
             </div>
 
             
@@ -765,6 +692,62 @@
             
             // Start the typewriter effect
             setTimeout(typeWriter, 1000);
+            
+            // Carregar e renderizar projetos dinamicamente
+            async function carregarProjetos() {
+                try {
+                    const response = await fetch('assets/projetos.json');
+                    const data = await response.json();
+                    const projetosContainer = document.getElementById('projects-container');
+                    
+                    projetosContainer.innerHTML = '';
+                    
+                    data.projetos.forEach((projeto, index) => {
+                        const delay = (index + 1) * 100;
+                        const projectItem = document.createElement('div');
+                        projectItem.className = 'project-item';
+                        projectItem.setAttribute('data-aos', 'flip-up');
+                        projectItem.setAttribute('data-aos-delay', delay);
+                        
+                        const tagsHTML = projeto.tags.map(tag => `<span>${tag}</span>`).join('');
+                        
+                        let linksHTML = '';
+                        if (projeto.link || projeto.github) {
+                            linksHTML = '<div class="project-links">';
+                            if (projeto.link) {
+                                linksHTML += `<a href="${projeto.link}" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i> Ver projeto</a>`;
+                            }
+                            if (projeto.github) {
+                                linksHTML += `<a href="${projeto.github}" target="_blank" class="project-link"><i class="fab fa-github"></i> GitHub</a>`;
+                            }
+                            linksHTML += '</div>';
+                        }
+                        
+                        projectItem.innerHTML = `
+                            <div class="project-content">
+                                <h3>${projeto.titulo}</h3>
+                                <p>${projeto.descricao}</p>
+                                <div class="project-tags">
+                                    ${tagsHTML}
+                                </div>
+                                ${linksHTML}
+                            </div>
+                        `;
+                        
+                        projetosContainer.appendChild(projectItem);
+                    });
+                    
+                    // Reinicializar AOS para os novos elementos
+                    AOS.refresh();
+                } catch (error) {
+                    console.error('Erro ao carregar projetos:', error);
+                    const projetosContainer = document.getElementById('projects-container');
+                    projetosContainer.innerHTML = '<p style="color: var(--text-color); text-align: center;">Erro ao carregar projetos. Por favor, tente novamente mais tarde.</p>';
+                }
+            }
+            
+            // Carregar projetos quando a página estiver pronta
+            carregarProjetos();
         });
     </script>
 </body>
