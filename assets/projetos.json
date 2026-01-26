@@ -23,7 +23,7 @@
       "titulo": "SSC - Sistema de Suporte ao Cliente",
       "descricao": "Desenvolvido em C# utilizando Windows Forms e .NET Core, o SSC é um sistema robusto de suporte técnico que visa melhorar a comunicação entre técnicos e clientes. Com funcionalidades avançadas de chat em tempo real, permite uma interação instantânea e eficaz.",
       "tags": ["C#", "Windows Forms", ".NET Core"],
-      "imagem": "assets/img/ssc.jpeg",
+      "imagem": "assets/img/ssc.png",
       "link": "",
       "github": ""
     },
@@ -32,7 +32,7 @@
       "titulo": "Sistema ERP FrutNorte",
       "descricao": "Desenvolvi um sistema ERP desktop utilizando Flutter (versão mais recente), MySQL 15 e GetX para controle de estado. O sistema inclui funcionalidades como CRUD de cadastros de pessoas e produtos, controle de entrada e saída de produtos, e controle de acesso.",
       "tags": ["Flutter", "MySQL", "GetX", "Desktop"],
-      "imagem": "assets/img/frutnorte.jpeg",
+      "imagem": "assets/img/frutnorte.jpg",
       "link": "",
       "github": ""
     },
@@ -41,7 +41,7 @@
       "titulo": "Aplicativo Android/IOS de livros",
       "descricao": "Estou desenvolvendo um aplicativo móvel para a leitura de mangás asiáticos, conectando os usuários a uma ampla variedade de títulos através de uma API online. O aplicativo possui três telas principais: a tela inicial com abas de recomendações, lançamentos e mangás em andamento.",
       "tags": ["Flutter", "Mobile", "API"],
-      "imagem": "assets/img/mangas.jpeg",
+      "imagem": "assets/img/mangas.jpg",
       "link": "",
       "github": ""
     },
@@ -59,7 +59,7 @@
       "titulo": "Sistema CRM para Clínicas Médicas",
       "descricao": "Plataforma completa de CRM para clínicas médicas desenvolvida com Golang, Echo Framework v4 e GORM utilizando PostgreSQL. Responsável pelo desenvolvimento completo do back-end, implementando Clean Architecture com separação de responsabilidades (handlers, services, repositories). Sistema inclui autenticação dupla (JWT e API Key), sistema de permissões granular por roles hierárquicos, WebSocket para comunicação em tempo real, chat inteligente com IA utilizando LLMs para atendimento automatizado 24/7, gestão completa de pacientes, agendamentos, prontuários eletrônicos (anamneses), dashboard com métricas, sistema multi-clínicas, planos e assinaturas, e integração com sistemas de automação (n8n, Make, Zapier). Implementação de middlewares customizados, tratamento centralizado de erros, paginação, upload de arquivos, webhooks para agentes de IA, integração com MCPs e API REST completa. Responsável também pela infraestrutura, subindo e configurando o servidor em KVM4 da Hostinger, garantindo alta disponibilidade e performance do sistema.",
       "tags": ["Golang", "ECHO", "GORM", "PostgreSQL", "Clean Architecture", "JWT", "WebSocket", "REST API", "LLM", "IA", "MCPs", "KVM4", "Infraestrutura"],
-      "imagem": "assets/img/crm_clinica.jpeg",
+      "imagem": "assets/img/crm_clinica.jpg",
       "link": "",
       "github": ""
     },
@@ -77,7 +77,7 @@
       "titulo": "Vertice - Aplicativo de Gestão para Micro Empreendedores",
       "descricao": "Aplicativo mobile de gestão completo para micro empreendedores, desenvolvido em Flutter utilizando BLoC para gerenciamento de estado, seguindo Clean Architecture e princípios SOLID. Responsável pelo desenvolvimento completo do front-end, implementando interfaces modernas e intuitivas com foco em UX/UI. O aplicativo oferece funcionalidades de gestão de vendas, produtos, dashboard com métricas e navegação fluida entre diferentes áreas do sistema. Projeto desenvolvido em conjunto com um parceiro, com previsão de lançamento na Play Store. Utiliza tecnologias robustas do ecossistema Flutter incluindo BLoC, Provider, Dio para comunicação HTTP, Freezed para modelos imutáveis, Equatable para comparação de objetos e arquitetura escalável.",
       "tags": ["Flutter", "BLoC", "Clean Architecture", "Dio", "Freezed", "Equatable", "SOLID", "Mobile", "Play Store"],
-      "imagem": "assets/img/vertice_app.jpeg",
+      "imagem": "assets/img/vertice_app.jpg",
       "link": "",
       "github": ""
     }
