@@ -28,7 +28,7 @@ window.DATA.quests = [
     status: "done",
     title: "CRM Médico · Plataforma com IA",
     img: "assets/img/crm_clinica.jpg",
-    desc: "Plataforma completa de CRM para clínicas médicas em Golang + Echo v4 + GORM + PostgreSQL. Implementei Clean Architecture com handlers/services/repositories, autenticação dupla (JWT + API Key), permissões granulares, WebSocket em tempo real, chat com LLMs para atendimento 24/7, prontuários eletrônicos, multi-clínica, planos e assinaturas. Integrei n8n, Make, Zapier e MCPs. Configurei toda a infra em KVM4 da Hostinger.",
+    desc: "CRM para clínicas médicas em Golang + Echo v4 + GORM + PostgreSQL. Tentei aplicar Clean Architecture, autenticação JWT + API Key, WebSocket e integração com LLMs. Também mexi com infra na Hostinger. Foi o projeto onde mais aprendi sobre estruturar um backend do zero.",
     tags: ["Golang", "Echo", "GORM", "PostgreSQL", "Clean Arch", "JWT", "WebSocket", "LLM", "MCPs"],
     rewards: { xp: 4800, gold: 2000, item: "Backend Architect Sigil" }
   },
@@ -38,7 +38,7 @@ window.DATA.quests = [
     status: "done",
     title: "Nexus Manage · Backend Mercado Livre",
     img: "assets/img/nexus.jpg",
-    desc: "Plataforma de gestão completa para vendedores do Mercado Livre. Como fundador e principal dev de back-end, construí a arquitetura em FastAPI + Peewee + MySQL. Integrações com APIs externas, automações de vendas, controle de estoque, relatórios detalhados.",
+    desc: "Plataforma de gestão para vendedores do Mercado Livre — tentativa de produto próprio. Back-end em FastAPI + Peewee + MySQL. Integrações com APIs externas, automações de vendas, controle de estoque. Aprendi muito sobre o que é construir algo pensando no usuário real.",
     tags: ["FastAPI", "Peewee", "MySQL", "Mercado Livre API"],
     rewards: { xp: 4200, gold: 1800, item: "Founder Token" }
   },

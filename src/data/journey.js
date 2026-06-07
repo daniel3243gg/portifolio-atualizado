@@ -6,25 +6,25 @@ window.DATA.experience = [
     company: "SYNGULAR SYSTEMAS",
     date: "04/2026 — ATUAL · Remoto · Tempo integral",
     current: true,
-    body: "Atuação como programador full time em ambiente remoto. Stack focada em Java + JSF (JavaServer Faces) com Primefaces, JavaScript + jQuery no front-end e PostgreSQL no banco. Engenharia de sistemas de software e engenharia web aplicadas no dia a dia."
+    body: "Programador full time em ambiente remoto. Stack: Java + JSF com Primefaces, JavaScript + jQuery e PostgreSQL. Estou aprendendo bastante sobre sistemas em produção e como manter software legado funcionando — uma perspectiva bem diferente de desenvolver do zero."
   },
   {
     role: "Analista e Desenvolvedor de Sistemas",
     company: "Calory Sistema",
     date: "03/2024 — 09/2025",
-    body: "Responsável pelo desenvolvimento de softwares em Flutter, criando aplicativos do zero — planejamento da estrutura, interface e integração com base de dados. Contribui em tarefas diárias garantindo eficiência operacional. Projetos desafiadores que ampliam conhecimento em mobile e desenvolvimento ágil."
+    body: "Desenvolvimento de aplicativos em Flutter do zero — da estrutura inicial à integração com banco de dados. Aprendi bastante sobre o dia a dia de uma empresa de software e como trabalhar com entregas contínuas. Projetos desafiadores que me ajudaram a crescer no mobile."
   },
   {
-    role: "Fundador",
+    role: "Dev & Fundador",
     company: "Nexus Manage",
     date: "04/2024 — 03/2025",
-    body: "Fundador e principal dev do back-end. Stack FastAPI + Peewee + MySQL — arquitetura robusta, escalável e eficiente. Integrações com APIs externas, automações de vendas, controle de estoque, geração de relatórios."
+    body: "Tentei construir um produto do zero como dev e empreendedor ao mesmo tempo. Stack FastAPI + Peewee + MySQL. Integrações com APIs externas, automações de vendas, controle de estoque. Aprendi mais sobre arquitetura e gestão de produto do que imaginava — inclusive o que não fazer."
   },
   {
     role: "Dev Trainee",
     company: "BZS Tecnologia",
     date: "03/2023 — 12/2023",
-    body: "Auxílio em suporte de rotinas e criação. Stack PHP7, Python, HTML, Bootstrap, jQuery, JS e Yii2. PHP7 + Yii2 foi a tecnologia mais usada — conhecimento profundo da linguagem e framework, sempre entregando dentro do prazo. Primeira experiência de mercado."
+    body: "Auxílio em suporte de rotinas e criação. Stack PHP7, Python, HTML, Bootstrap, jQuery, JS e Yii2. PHP7 + Yii2 foi a tech principal — aprendi como é trabalhar em ambiente real de desenvolvimento. Minha primeira experiência de mercado, que me deu base pra tudo que veio depois."
   },
   {
     role: "Auxiliar Administrativo",

@@ -10,15 +10,15 @@ window.DATA.identity = {
   email: "daniew1000@gmail.com",
   linkedin: "https://www.linkedin.com/in/daniel-feliciano-vieira-brandao-57ab66201/",
   github: "https://github.com/daniel3243gg",
-  bio: "Dev full stack em formação pelo BIOPARK. Constrói sistemas mobile, backends robustos e arquiteturas escaláveis. Trabalha com Flutter, Golang, Python, PHP, AWS e LLMs. Caça bugs por hobby, refatora por vício.",
-  objective: "Tornar-se referência na área e alcançar o posto de TECH LEAD.",
+  bio: "Dev full stack em formação pelo BIOPARK. Gosto de construir coisas do zero e entender como funcionam por dentro. Trabalho com Flutter, Golang, Python e estou sempre aprendendo algo novo — cloud, IA, o que aparecer. Curto o processo, mesmo quando dá errado.",
+  objective: "Crescer como desenvolvedor, trabalhar em times que me desafiem e continuar aprendendo todo dia.",
   titles: [
     "Fullstack Developer",
-    "Mobile Engineer · Flutter",
-    "Backend Architect · Golang",
-    "Python Hacker",
-    "AI / LLM Integrator",
-    "Cloud Operator · AWS"
+    "Mobile Dev · Flutter",
+    "Backend Dev · Golang",
+    "Python · Automações",
+    "Explorando IA & LLMs",
+    "Aprendendo Cloud · AWS"
   ]
 };
 
